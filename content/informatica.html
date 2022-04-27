@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+        <link href="../node_modules/animate.css/animate.css" rel="stylesheet">
+        <link href="output.css" rel="stylesheet">
+
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/informatica.js"></script>
+        <script src="js/navbar.js"></script>
+    </head>
+    <body class="overflow-x-hidden">
+        <nav class="w-full h-fit py-3 fixed top-0 z-50 bg-neutral-900">
+            <div class="hidden sm:flex h-full md:space-x-8 lg:space-x-12 justify-center items-center">
+                <a href="informatica.html" class="text-white underline">informatica</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">tpsi</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">gpo</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">italiano</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">scienze motorie</a>
+            </div>
+            <div id="mobilenav" class="hidden sm:hidden justify-items-center">
+                <a href="informatica.html" class="text-white underline">informatica</a>
+                <a class="text-white hover:underline">tpsi</a>
+                <a class="text-white hover:underline">gpo</a>
+                <a class="text-white hover:underline">italiano</a>
+                <a class="text-white hover:underline">scienze motorie</a>
+            </div>
+            <div id="btncontainer" class="w-full h-fit flex sm:hidden justify-center" onclick="showNav()">
+                <i id="navbutton" class="fa-solid fa-caret-down text-xl text-white"></i>
+            </div>
+        </nav>
+
+        <div id="pageposition" class="md:hidden w-screen fixed bottom-0 right-1/4 pr-2 h-1 bg-blue-900">
+            
+        </div>
+
+        <div id="section_0" class="w-full h-screen md:h-fit mt-20 lg:mt-24">
+            <div class="md:w-fit h-fit flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-8 mx-7 lg:mx-auto rounded-3xl shadow-xl border-2 md:border-0 md:border-l-2">
+                <div class="flex flex-col space-y-5 max-w-2xl rounded-t-3xl md:rounded-t-0 md:rounded-l-3xl px-3 md:px-0 md:pl-6 pt-5">
+                    <div>
+                        <p class="titolopagina text-4xl sm:text-6xl animate__animated animate__fadeInDown animate__slow animate__delay-0.5s">informatica</p>
+                        <p class="sottotitolo sm:mt-2 text-2xl sm:text-3xl animate__animated animate__fadeInDown animate__slow animate__delay-1s">il diritto d'autore</p>
+                    </div>
+                    <div>
+                        <p class="paragrafo text-lg animate__animated animate__fadeIn animate__slow animate__delay-2s text-justify">Il diritto d’autore tutela le opere dell’ingegno di carattere creativo attraverso il riconoscimento all'autore o autori originari di una serie di diritti di carattere morale e patrimoniale. Esso riguarda le scienze, la letteratura, la musica, le arti figurative, l’architettura, il teatro, la cinematografia, la radiodiffusione e i programmi per elaboratore (software) e le banche dati.</p>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="../IMGs/copyright.jpg" class="md:h-96 w-full md:w-auto object-cover object-center rounded-b-3xl md:rounded-bl-none md:rounded-r-3xl">
+                </div>
+            </div>
+            
+            <div class="max-w-5xl flex flex-col space-y-8 mx-auto mt-16 md:mt-20">
+                <div class="w-full col-span-full flex justify-center">
+                    <p class="sottotitolo text-3xl text-justify">si divide in</p>
+                </div>
+                <div class="sm:flex">
+                    <div class="sm:w-1/2 px-6 sm:pl-7 sm:pr-3">
+                        <p class=" paragrafo sm:text-lg text-justify"><span class="sm:text-lg font-semibold">diritto morale d’autore</span> - Il diritto morale d’autore è un diritto personale, inalienabile e intrasmissibile. Si compone di una serie di facoltà, tra cui il diritto di rivendicare la paternità dell’opera e di opporsi a qualsiasi deformazione, mutilazione o altra modificazione dell’opera stessa anche dopo la morte dell’autore.</p>
+                    </div>
+                    <div class="sm:w-1/2 mt-5 sm:mt-0 px-6 sm:pl-3 sm:pr-7">
+                        <p class="paragrafo sm:text-lg text-justify"><span class="sm:text-lg font-semibold">diritto patrimoniale d’autore</span> - Il diritto patrimoniale d’autore consiste nel diritto esclusivo di sfruttamento economico dell’opera protetta. Tali facoltà spettano, all’autore o ai suoi aventi causa e hanno una durata limitata nel tempo, potendo lo sfruttamento in esclusiva essere esercitato solo per tutta la vita dell’autore e fino a 70 anni dalla sua morte. Tutte le facoltà componenti il diritto patrimoniale possono essere oggetto di atti di trasferimento per mezzo di contratto di licenza o di cessione.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

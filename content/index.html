@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" rel="stylesheet">
+        <link href="../node_modules/animate.css/animate.css" rel="stylesheet">
+        <link href="output.css" rel="stylesheet">
+
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/landing.js"></script>
+        <script src="js/navbar.js"></script>
+    </head>
+    <body class="overflow-y-hidden md:overflow-y-scroll md:overflow-x-hidden">
+        <nav class="w-full h-fit py-3 fixed z-50 bg-neutral-900">
+            <div class="hidden sm:flex h-full md:space-x-12 justify-center items-center">
+                <a href="informatica.html" class="text-white underline">informatica</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">tpsi</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">gpo</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">italiano</a>
+                <p class="text-white">-</p>
+                <a class="text-white hover:underline">scienze motorie</a>
+            </div>
+            <div id="mobilenav" class="hidden sm:hidden justify-items-center">
+                <a href="informatica.html" class="text-white underline">informatica</a>
+                <a class="text-white hover:underline">tpsi</a>
+                <a class="text-white hover:underline">gpo</a>
+                <a class="text-white hover:underline">italiano</a>
+                <a class="text-white hover:underline">scienze motorie</a>
+            </div>
+            <div id="btncontainer" class="w-full h-fit flex sm:hidden justify-center" onclick="showNav()">
+                <i id="navbutton" class="fa-solid fa-caret-down text-xl text-white"></i>
+            </div>
+        </nav>
+
+        <div class="md:hidden w-full pr-2 grid grid-cols-1 space-y-2 justify-items-end z-50 fixed top-1/2 animate__animated animate__fadeInRight  animate__delay-1s">
+            <div class="nav_dot h-3 w-3 border-2 rounded-full bg-white border-black"></div>
+            <div class="nav_dot h-3 w-3 border-2 rounded-full border-black"></div>
+            <!--<div class="nav_dot h-3 w-3 border-2 rounded-full"></div>
+            <div class="nav_dot h-3 w-3 border-2 rounded-full"></div>-->
+        </div>
+
+        <div id="section_0">
+            <div>
+                <img src="../IMGs/sfondo_sfuocato2.jpg" class="w-full h-screen object-cover object-center -z-10">
+            </div>
+            <div class="w-full h-screen z-0 flex justify-center items-center absolute -translate-y-full" >
+                <p id="civica" class="h-16 text-white md:ml-0 ml-4 sm:text-6xl animate__animated animate__fadeInDown animate__slow animate__delay-0.5s">educazione civica</p>
+            </div>
+            <div class="w-full z-0 flex justify-center items-center absolute -translate-y-16" >
+                <i id="arrow_down" class="fa-solid fa-arrow-down  text-white text-2xl  animate__animated animate__fadeIn animate__slow animate__delay-3s"></i>
+            </div>
+        </div>
+
+        <div id="section_1" class="w-full h-screen">
+
+        </div>
+    </body>
+</html>

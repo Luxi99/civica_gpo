@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto.ttf);
+}
+
+@font-face {
+    font-family: RobotoItalic;
+    src: url(../fonts/RobotoItalic.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav a{
+    font-family: RobotoItalic, sans-serif;
+    font-weight: lighter;
+    font-display: swap;
+}
+
+#civica{
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 3.55rem;
+    line-height: 1;
+}
+
+#pageposition {
+    transition:right .2s linear;
+}
+
+.titolopagina{
+    font-weight: 500;
+}
+
+.sottotitolo{
+    font-weight: 300;
+}
+
+.paragrafo{
+    font-weight: 200;
+}
+
+.nav_dot{
+    transition: background-color .6s, border-color .6s;
+    transition-timing-function: ease;
+}
