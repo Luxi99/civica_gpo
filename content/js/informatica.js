@@ -6,8 +6,6 @@ function getOffset(){
 }
 
 $(function(){
-    position = getSection();
-    setNavbar(parseInt(getSection(), 10));
     console.log(viewportHeight + " " +  viewportWidth);
 
     setTimeout(function(){
